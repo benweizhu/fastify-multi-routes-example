@@ -1,0 +1,11 @@
+{
+  "name": "fastify-multi-routes-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:benweizhu/fastify-multi-routes-example.git",
+  "author": "benweizhu <bwzhu@thoughtworks.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.20.2"
+  }
+}
