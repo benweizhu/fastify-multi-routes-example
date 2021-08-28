@@ -3,10 +3,8 @@ const fastify = require('fastify')({
     logger: true
 })
 
-// Declare a route
-fastify.get('/', function (request, reply) {
-    reply.send({ hello: 'world' })
-})
+fastify.register(require('./address_routes'), { prefix: '/address' })
+fastify.register(require('./vehicle_routes'), { prefix: '/vehicle' })
 
 // Run the server!
 fastify.listen(3000, function (err, address) {
